@@ -1,0 +1,10 @@
+project: https://platform.activestate.com/MyOrg/exiftool
+languages:
+- name: perl
+scripts:
+- name: tests
+  description: Executes tests
+  value: validate
+- name: lints
+  description: Executes linting tools
+  value: echo tbd
