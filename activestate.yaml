@@ -3,8 +3,10 @@ languages:
 - name: perl
 scripts:
 - name: tests
+  language: perl
   description: Executes tests
-  value: make test
+  value: prove t/*.t
 - name: lints
+  language: perl
   description: Executes linting tools
   value: perlcritic ./
