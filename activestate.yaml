@@ -9,4 +9,4 @@ scripts:
 - name: lints
   language: perl
   description: Executes linting tools
-  value: perlcritic ./
+  value: perlcritic .
