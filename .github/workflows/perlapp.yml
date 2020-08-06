@@ -48,7 +48,9 @@ jobs:
           ${{ runner.os }}-build-${{ env.cache-name }}
     # Running project tests 
     - name: Test with prove
-      run: state run tests
+      run: |
+        perl -v
+        state run tests
     # Execute linting of the project, and continue even if linting fails
     - name: Lint with perlcritic
       continue-on-error: true
