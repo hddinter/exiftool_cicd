@@ -46,9 +46,9 @@ jobs:
         key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('activestate.yaml') }}
         restore-keys: |
           ${{ runner.os }}-build-${{ env.cache-name }}
-    # Execute linting of the project on ActivePython
-    - name: Lint with flake8
+    # Execute linting of the project on ActivePerl
+    - name: Lint with Perl::Critic
       run: state run lints
-    # Running project tests using pytest on ActivePython
-    - name: Test with pytest
+    # Running project tests using Test::Harness on ActivePerl
+    - name: Test with Test::Harness
       run: state run tests
