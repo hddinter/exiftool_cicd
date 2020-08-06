@@ -2,21 +2,25 @@ project: https://platform.activestate.com/MyOrg/exiftool
 languages:
 - name: perl
 scripts:
-- name: tests
-  language: batch
-  description: Executes tests
-  value: prove
-- name: lints
-  if: eq Platform.OS "windows"
-  language: batch
-  description: Executes linting tools
-  value: |
-    perlcritic windows_exiftool
-    perlcritic lib\
-- name: lints
-  if: ne Platform.OS "windows"
-  language: bash
-  description: Executes linting tools
-  value: |
-    perlcritic exiftool
-    perlcritic lib/
+  - name: tests
+    language: batch
+    description: Executes tests
+    value: | 
+      set PERL5LIB=.\lib
+      prove
+  - name: lints
+    constraints: 
+      os: windows 
+    language: batch
+    description: Executes linting tools
+    value: |
+      perlcritic windows_exiftool
+      perlcritic lib\
+  - name: lints
+    constraints: 
+      os: macos,linux 
+    language: bash
+    description: Executes linting tools
+    value: |
+      perlcritic exiftool
+      perlcritic lib/
