@@ -7,6 +7,16 @@ scripts:
   description: Executes tests
   value: prove
 - name: lints
+  if: eq Platform.OS "windows"
   language: batch
   description: Executes linting tools
-  value: perlcritic .
+  value: |
+    perlcritic windows_exiftool
+    perlcritic lib\
+- name: lints
+  if: ne Platform.OS "windows"
+  language: bash
+  description: Executes linting tools
+  value: |
+    perlcritic exiftool
+    perlcritic lib/
