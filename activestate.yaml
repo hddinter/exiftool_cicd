@@ -4,7 +4,7 @@ languages:
 scripts:
 - name: tests
   description: Executes tests
-  value: validate
+  value: make test
 - name: lints
   description: Executes linting tools
-  value: echo tbd
+  value: perlcritic ./
