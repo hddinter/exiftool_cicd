@@ -3,10 +3,10 @@ languages:
 - name: perl
 scripts:
 - name: tests
-  language: perl
+  language: batch
   description: Executes tests
-  value: prove t/*.t
+  value: prove
 - name: lints
-  language: perl
+  language: batch
   description: Executes linting tools
   value: perlcritic .
