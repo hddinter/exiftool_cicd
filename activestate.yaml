@@ -6,6 +6,7 @@ scripts:
     language: batch
     description: Executes tests
     value: | 
+      perl -v
       set PERL5LIB=.\lib
       prove
   - name: lints
