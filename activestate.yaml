@@ -3,11 +3,22 @@ languages:
 - name: perl
 scripts:
   - name: tests
+    constraints: 
+      os: windows 
     language: batch
     description: Executes tests
     value: | 
       perl -v
       set PERL5LIB=.\lib
+      prove
+  - name: tests
+    constraints: 
+      os: macos,linux 
+    language: bash
+    description: Executes tests
+    value: | 
+      perl -v
+      export PERL5LIB=./lib
       prove
   - name: lints
     constraints: 
