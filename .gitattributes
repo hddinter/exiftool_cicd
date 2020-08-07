@@ -1,3 +1,9 @@
 *.png binary
 *.jpg binary
 *.txt binary
+*.afm binary
+*.dfont binary
+*.pfa binary
+*.pfb binary
+*.pfm binary
+*.ttf binary
