@@ -25,10 +25,10 @@ scripts:
       os: windows 
     language: batch
     description: Executes linting tools
-    value: perlcritic windows_exiftool && perlcritic lib\
+    value: perlcritic windows_exiftool & perlcritic lib\
   - name: lints
     constraints: 
       os: macos,linux 
     language: bash
     description: Executes linting tools
-    value: perlcritic exiftool && perlcritic lib/
+    value: perlcritic exiftool & perlcritic lib/
