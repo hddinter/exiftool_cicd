@@ -1,9 +1,17 @@
 *.png binary
 *.jpg binary
 *.txt binary
+*.csv binary
 *.afm binary
 *.dfont binary
 *.pfa binary
 *.pfb binary
 *.pfm binary
 *.ttf binary
+*.json binary
+*.plist binary
+*.aae binary
+*.ppm binary
+*.rtf binary
+*.xmp binary
+*.svg binary
