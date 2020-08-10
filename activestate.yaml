@@ -9,7 +9,7 @@ scripts:
     description: Executes tests
     value: | 
       perl -v
-      prove -l .\lib
+      prove -l
   - name: tests
     constraints: 
       os: macos,linux 
@@ -17,7 +17,7 @@ scripts:
     description: Executes tests
     value: | 
       perl -v
-      prove -l ./lib
+      prove -l
   - name: lints
     constraints: 
       os: windows 
