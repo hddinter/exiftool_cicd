@@ -3,17 +3,6 @@ languages:
 - name: perl
 scripts:
   - name: tests
-    constraints: 
-      os: windows 
-    language: batch
-    description: Executes tests
-    value: | 
-      perl -v
-      prove -l
-  - name: tests
-    constraints: 
-      os: macos,linux 
-    language: bash
     description: Executes tests
     value: | 
       perl -v
