@@ -9,8 +9,7 @@ scripts:
     description: Executes tests
     value: | 
       perl -v
-      set PERL5LIB=.\lib
-      prove
+      prove -l .\lib
   - name: tests
     constraints: 
       os: macos,linux 
@@ -18,8 +17,7 @@ scripts:
     description: Executes tests
     value: | 
       perl -v
-      export PERL5LIB=./lib
-      prove
+      prove -l ./lib
   - name: lints
     constraints: 
       os: windows 
