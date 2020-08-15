@@ -1,3 +1,10 @@
+## A fork of the [exiftool](https://github.com/exiftool/exiftool) project used to explore ways to use the ActiveState Platform and its CLI the State Tool. 
+If you're here to explore and experiment with the [ActiveState Platform](https://platform.activestate.com/ActiveState/exiftool_cicd) and its CLI the [State Tool](https://www.activestate.com/products/platform/state-tool), welcome! If you didn't know you were interested but are now, welcome!
+
+But if you're simply looking for the original tool, [the original repo](https://github.com/exiftool/exiftool) is the right place for you. It'll always be up to date, the maintainer is able to tackle issues and PRs, and it for sure deserves all the credit for the value it provides to the community :smile:
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ExifTool by Phil Harvey (philharvey66 at gmail.com)
 ----------------------------------------------------------------------------
 
