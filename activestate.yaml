@@ -1,4 +1,4 @@
-project: https://platform.activestate.com/MyOrg/exiftool
+project: https://platform.activestate.com/ActiveState-Labs/exiftool
 languages:
 - name: perl
 scripts:
